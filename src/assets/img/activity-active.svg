@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>活动选中</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="活动选中">
+            <path d="M1,6.2643667 L1,13.7356333 L11,18.4263758 L11,1.57362422 L1,6.2643667 Z" id="Rectangle-18" stroke="#024884" stroke-width="2"></path>
+            <path d="M18.4855042,19.8574929 L13.4855042,16.8574929 L14.5144958,15.1425071 L19.5144958,18.1425071 L18.4855042,19.8574929 Z M20,9 L20,11 L14,11 L14,9 L20,9 Z M18.4855042,0.142507074 L19.5144958,1.85749293 L14.5144958,4.85749293 L13.4855042,3.14250707 L18.4855042,0.142507074 Z" id="Path-5-Copy-2" fill="#FF7D25" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

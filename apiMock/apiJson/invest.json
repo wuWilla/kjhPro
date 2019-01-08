@@ -1,0 +1,188 @@
+[
+  {
+    "path": "/product/buy/history/list",
+    "method": "get",
+    "params": ["userId", "bankId", "productType", "productId", "queryType", "startDate", "endDate"],
+    "paramsCanBeNull": ["productId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "limit": 10,
+      "start": 0,
+      "total": 5,
+      "buyHistoryList": [
+        {
+          "userId": "111",
+          "bankId": "ABC",
+          "productId": "jiufu",
+          "productName": "玖富财富",
+          "productType": "1",
+          "bankOrderNo": "22223333",
+          "tradeAmount": 222,
+          "tradeType": "1",
+          "tradeTime": "2018-4-5 12:00:00",
+          "tradeDate": "2018-4-5"
+        },
+        {
+          "userId": "111",
+          "bankId": "ABC",
+          "productId": "jiufu",
+          "productName": "玖富财富",
+          "productType": "2",
+          "bankOrderNo": "22223333",
+          "tradeAmount": -500,
+          "tradeType": "2",
+          "tradeTime": "2018-8-6 14:00:00",
+          "tradeDate": "2018-8-6"
+        },
+        {
+          "userId": "111",
+          "bankId": "ABC",
+          "productId": "jiufu",
+          "productName": "玖富财富",
+          "productType": "1",
+          "bankOrderNo": "22223333",
+          "tradeAmount": 2233,
+          "tradeType": "1",
+          "tradeTime": "2018-9-6 10:00:00",
+          "tradeDate": "2018-9-6"
+        },
+        {
+          "userId": "111",
+          "bankId": "ABC",
+          "productId": "jiufu",
+          "productName": "玖富财富",
+          "productType": "2",
+          "bankOrderNo": "22223333",
+          "tradeAmount": -200,
+          "tradeType": "2",
+          "tradeTime": "2018-9-6 10:00:00",
+          "tradeDate": "2018-9-6"
+        },
+        {
+          "userId": "111",
+          "bankId": "ABC",
+          "productId": "jiufu",
+          "productName": "玖富财富",
+          "productType": "1",
+          "bankOrderNo": "22223333",
+          "tradeAmount": 2233,
+          "tradeType": "1",
+          "tradeTime": "2018-9-6 10:00:00",
+          "tradeDate": "2018-9-6"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/product/income/summary",
+    "method": "get",
+    "params": ["userId", "productType", "bankId", "productStatus"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "start":0,
+      "limit":10,
+      "total":3,
+      "productList": [
+        {
+          "bankId": "ABC",
+          "bankName": "中国农业银行",
+          "userId": "111",
+          "productId": "jiufu",
+          "productName": "玖富财富(第02393期)",
+          "totalAmount": 20000.00,
+          "totalIncome": 233.39,
+          "period": 30,
+          "yield1": 0.45,
+          "yield2": 0.5,
+          "finStartDate": "2018-4-5",
+          "finEndDate": "2018-8-5"
+        },
+        {
+          "bankId": "ABC",
+          "bankName": "中国农业银行",
+          "userId": "111",
+          "productId": "jiufu",
+          "productName": "玖富财富(第02394期)",
+          "totalAmount": 150000.00,
+          "totalIncome": 233.39,
+          "period": 20,
+          "yield1": 0.45,
+          "yield2": 0.5,
+          "finStartDate": "2018-4-5",
+          "finEndDate": "2018-8-5"
+        },
+        {
+          "bankId": "ABC",
+          "bankName": "中国农业银行",
+          "userId": "111",
+          "productId": "jiufu",
+          "productName": "玖富财富(第02395期)",
+          "totalAmount": 500000.00,
+          "totalIncome": 233.39,
+          "period": 5,
+          "yield1": 0.45,
+          "yield2": 0.5,
+          "finStartDate": "2018-4-5",
+          "finEndDate": "2018-8-5"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/product/income/detail",
+    "method": "get",
+    "params": ["userId", "productType","productId", "bankId", "startDate", "endDate"],
+    "paramsCanBeNull": ["productId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "limit": 10,
+      "start": 0,
+      "total": 5,
+      "bankId": "ABC",
+      "userId": "111",
+      "incomeRecordList": [
+        {
+          "productId": "jiufu",
+          "productName": "玖富财富",
+          "incomeAmount": 34.50,
+          "tradeTime": "2018-07-20"
+        },
+        {
+          "productId": "jiufu",
+          "productName": "玖富财富",
+          "incomeAmount": -30.20,
+          "tradeTime": "2018-07-19"
+        },
+        {
+          "productId": "fuguo",
+          "productName": "富国财富",
+          "incomeAmount": -10.60,
+          "tradeTime": "2018-07-20"
+        },{
+          "productId": "fuguo",
+          "productName": "富国财富",
+          "incomeAmount": 50.50,
+          "tradeTime": "2018-07-19"
+        },
+        {
+          "productId": "jiufu",
+          "productName": "玖富财富",
+          "incomeAmount": 80.50,
+          "tradeTime": "2018-07-18"
+        }
+      ]
+    }
+  }
+]

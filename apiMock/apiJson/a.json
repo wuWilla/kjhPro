@@ -1,0 +1,21 @@
+[
+  {
+    "path":"/login",
+    "method": "get",
+    "params": ["a", "b", "c"],
+    "paramsCanBeNull": ["a"],
+    "result": {
+      "a": 1
+    }
+  },
+  {
+    "path":"/upload",
+    "type": "upload",
+    "serverSaveFilePath": [],
+    "responseUrlInResultPath": "",
+    "urlName": "",
+    "result": {
+      "a": 1
+    }
+  }
+]

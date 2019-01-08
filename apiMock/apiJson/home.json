@@ -1,0 +1,28 @@
+[
+  {
+    "path":"/product/display/list",
+    "method": "get",
+    "params": ["location", "pageIndex"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"87654321",
+      "responseTime":"2018-12-20 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "productList":[
+        {
+          "productId": "123",
+          "bankId": "222",
+          "picURL": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2069019269,1090966471&fm=27&gp=0.jpg",
+          "location": "1"
+        },
+        {
+          "productId": "456",
+          "bankId": "333",
+          "picURL": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2069019269,1090966471&fm=27&gp=0.jpg",
+          "location": "1"
+        }
+      ]
+    }
+  }
+]

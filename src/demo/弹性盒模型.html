@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒模型</title>
+    <style>
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       .flex-container{
+           display: flex;
+           display: -webkit-flex;
+           /*width: 400px;*/
+           height: 250px;
+           background: #ccc;
+           border: 1px solid #333333;
+           justify-content: space-around;
+           align-items: flex-start;
+           flex-wrap: nowrap;
+       }
+       .flex-item {
+           background-color: blue;
+           width: 100px;
+           min-height: 100px;
+           margin: 10px;
+           /*margin-left: 20px;*/
+           -webkit-align-self: center;
+           /*align-self: self-end;*/
+       }
+        .flex-item:last-child{
+            /*margin-left: auto;*/
+            margin: auto 50px auto auto;
+        }
+        .item1{
+            flex-grow: 2333;
+            flex-shrink: 1;
+            flex-basis: 3222px;
+        }
+       .item2{
+           flex: 1;
+       }
+       .item3{
+           flex: 1;
+       }
+       .item4{
+           flex: 1;
+       }
+    </style>
+</head>
+<body>
+<section class="flex-container">
+    <div class="flex-item item1">flex item  1</div>
+    <div class="flex-item item2">flex item  2</div>
+    <div class="flex-item item3">flex item  3</div>
+    <div class="flex-item item4">flex item  4</div>
+</section>
+</body>
+</html>

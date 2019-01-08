@@ -1,0 +1,152 @@
+[
+  {
+    "path": "/user/info/",
+    "method": "get",
+    "params": ["userId"],
+    "result": {
+      "requestSystem": "requestSystem",
+      "requestNo": "12345678",
+      "responseTime": "2018-08-24 12:12:01",
+      "code": "000",
+      "message":"请求成功",
+      "userId": "333",
+      "nickName": "历史转折中的红领巾",
+      "iconURI": "https://gss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/337eb3c8d7d3313233343536373737c2a8.jpg",
+      "loginId": "3332",
+      "phone": "18818888888",
+      "payPwdStatus": "0",
+      "authenStatus": "0",
+      "userStatus": "1"
+    }
+  },
+  {
+    "path": "/user/info/detail",
+    "method": "get",
+    "params": ["userId"],
+    "result": {
+      "requestSystem": "requestSystem",
+      "requestNo": "12345678",
+      "responseTime": "2018-08-24 12:12:01",
+      "code": "000",
+      "message":"请求成功",
+      "userId": "333",
+      "nickName": "历史转折中的红领巾",
+      "iconURI": "http://image.baidu.com/search/detail?ct=503316480&z=0&ipn=false&word=%E5%A4%B4%E5%83%8F&hs=0&pn=1&spn=0&di=187206823540&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=3198678185%2C878755003&os=1416300148%2C916152465&simid=3456255796%2C470627875&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=head&bdtype=0&oriquery=%E5%A4%B4%E5%83%8F&objurl=http%3A%2F%2Fcdn.duitang.com%2Fuploads%2Fitem%2F201508%2F30%2F20150830105732_nZCLV.jpeg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3B17tpwg2_z%26e3Bv54AzdH3Fks52AzdH3F%3Ft1%3D9nllmnm0a&gsm=0&islist=&querylist=",
+      "loginId": "3332",
+      "phone": "18818888888",
+      "payPwdStatus": "0",
+      "authenStatus": "0",
+      "userStatus": "1",
+      "realName": "阿王",
+      "birthDay": "2018.08.08",
+      "sex": "1",
+      "country": "中国",
+      "province": "中国",
+      "city": "中国",
+      "language": "中国话",
+      "degree": "0",
+      "job": "3"
+    }
+  },
+  {
+    "path": "/verifyCode/send/kjh",
+    "method": "post",
+    "params": ["bizType", "phone"],
+    "result": {
+      "requestSystem": "requestSystem",
+      "requestNo": "12345678",
+      "responseTime": "2018-08-24 12:12:01",
+      "code": "000",
+      "message":"请求成功",
+      "sendStatus": "SUCCESS",
+      "phone": "18818888888"
+    }
+  },
+  {
+    "path": "/user/login",
+    "method": "post",
+    "params": ["phone", "verifyCode"],
+    "result": {
+      "requestSystem": "requestSystem",
+      "requestNo": "12345678",
+      "responseTime": "2018-08-24 12:12:01",
+      "code": "000",
+      "message":"请求成功",
+      "userId": "111"
+    }
+  },
+  {
+    "path": "/user/register",
+    "method": "post",
+    "params": ["phone", "verifyCode"],
+    "result": {
+      "requestSystem": "requestSystem",
+      "requestNo": "12345678",
+      "responseTime": "2018-08-24 12:12:01",
+      "code": "000",
+      "message":"请求成功",
+      "userId": "1222"
+    }
+  },
+  {
+    "path": "/directbank/ecAcct/balance",
+    "method": "get",
+    "params": ["userId", "bankId"],
+    "result": {
+      "requestSystem": "requestSystem",
+      "requestNo": "12345678",
+      "responseTime": "2018-08-24 12:12:01",
+      "code": "000",
+      "message":"请求成功",
+      "bankName": "中国银行",
+      "bankLogoUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537154000&di=5e479bc0c033c519e9b3f5f94e1ff16b&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.gywb.com.cn%2Fxinwen%2Fattachement%2Fjpg%2Fsite2%2F20151119%2F4299101259876511778.jpg",
+      "ecAcctId": "111",
+      "acctNo": "62222222222222222222",
+      "acctNoLastFour": "2222",
+      "totalAsset": 22222.21,
+      "InvestmentAmount": 500.00,
+      "ecAcctBalance": 21722.21,
+      "totalIncome": 400.00,
+      "lastDayIncome": 1234.5
+    }
+  },
+  {
+    "path": "/user/registered/direct/bank/list",
+    "method": "get",
+    "params": ["userId"],
+    "result": {
+      "requestSystem": "requestSystem",
+      "requestNo": "12345678",
+      "responseTime": "2018-08-24 12:12:01",
+      "code": "000",
+      "message":"请求成功",
+      "myBankList": [
+        {
+          "bankId": "12123",
+          "bankName": "中国建设银行",
+          "parentBankName": "中国人民银行",
+          "bankLogoUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536213909739&di=60ac4df8234ddcbc230cd02a064fcb55&imgtype=0&src=http%3A%2F%2Fhebei.sinaimg.cn%2F2014%2F1217%2FU9984P1275DT20141217110934.jpg",
+          "hasLogin": "0",
+          "acctNoLastFour": "1234",
+          "hasRiskAssess": "1",
+          "toleranceLevel": "3",
+          "toleranceDesc": "稳健型",
+          "score": 6
+        },
+        {
+          "bankId": "123123",
+          "bankName": "中国农业银行",
+          "parentBankName": "中国人民银行",
+          "bankLogoUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536214058874&di=602cf3e3f9ea6ed027714d0c1e08300d&imgtype=0&src=http%3A%2F%2Fwww.wvsoft.cn%2Fupload%2F2015-6%2F201561050950517.jpg",
+          "hasLogin": "0",
+          "acctNoLastFour": "1234",
+          "hasRiskAssess": "1",
+          "toleranceLevel": "3",
+          "toleranceDesc": "稳健型",
+          "score": 6
+        }
+      ]
+    }
+  }
+
+]

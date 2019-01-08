@@ -1,0 +1,19 @@
+export const Types = {
+    UPDATE_USER_ID: "UPDATE_USER_ID",
+    CLOSE_STATE: "CLOSE_STATE",
+    CLEAR_USER_ID: "CLEAR_USER_ID",
+
+    UPDATE_INVEST_ASSET: "UPDATE_INVEST_ASSET",
+
+    UPDATE_PRODUCT_TYPE: "UPDATE_PRODUCT_TYPE",
+
+    /**
+     * 当前购买的产品信息
+     * */
+    // UPDATE_CURRENT_BUY_PRODUCT: "UPDATE_CURRENT_BUY_PRODUCT",
+
+    /**
+     * 清除当前购买的产品信息
+     * */
+    // CLEAR_CURRENT_BUY_PRODUCT: "CLEAR_CURRENT_BUY_PRODUCT"
+};

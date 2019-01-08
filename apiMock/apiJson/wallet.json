@@ -1,0 +1,111 @@
+[
+  {
+    "path": "/red/envelope/acct/balance",
+    "method": "get",
+    "params": ["userId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "acctId": "qwe20190303",
+      "balance": 76345.00,
+      "frozenAmount": 80000.89,
+      "acctStatus": "NORMAL"
+    }
+  },
+  {
+    "path": "/red/envelope/acct/history",
+    "method": "get",
+    "params": ["userId", "recordType"],
+    "paramsCanBeNull": ["recordType"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "limit": 10,
+      "start": 0,
+      "total": 6,
+      "recordList": [
+        {
+          "recordId": "20180703wer",
+          "recordType": "0",
+          "changeDirection": "0",
+          "changeDesc": "提现",
+          "changeAmount": -4895.78,
+          "balance": 0,
+          "tradeRecordNo": "20180703180957",
+          "createTime": "2018-07-03 18:09:57"
+        },
+        {
+          "recordId": "20180712wer",
+          "recordType": "1",
+          "changeDirection": "1",
+          "changeDesc": "世界杯活动",
+          "changeAmount": 9.45,
+          "balance": 0,
+          "tradeRecordNo": "20180712092657",
+          "createTime": "2018-07-12 09:26:57"
+        },
+        {
+          "recordId": "20180723wer",
+          "recordType": "0",
+          "changeDirection": "0",
+          "changeDesc": "提现",
+          "changeAmount": 80.67,
+          "balance": 0,
+          "tradeRecordNo": "20180723170945",
+          "createTime": "2018-07-23 17:09:45"
+        },
+        {
+          "recordId": "20170703wer",
+          "recordType": "0",
+          "changeDirection": "0",
+          "changeDesc": "提现",
+          "changeAmount": -4895.78,
+          "balance": 0,
+          "tradeRecordNo": "20170703180957",
+          "createTime": "2017-07-03 18:09:57"
+        },
+        {
+          "recordId": "20170712wer",
+          "recordType": "1",
+          "changeDirection": "1",
+          "changeDesc": "世界杯活动",
+          "changeAmount": 9.45,
+          "balance": 0,
+          "tradeRecordNo": "20170712092657",
+          "createTime": "2017-07-12 09:26:57"
+        },
+        {
+          "recordId": "20170723wer",
+          "recordType": "0",
+          "changeDirection": "0",
+          "changeDesc": "提现",
+          "changeAmount": 80.67,
+          "balance": 0,
+          "tradeRecordNo": "20170723170945",
+          "createTime": "2017-07-23 17:09:45"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/red/envelope/acct/withdraw",
+    "method": "post",
+    "params": ["userId", "withdrawAmount"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "recordId": "201809020011",
+      "withdrawAmount": 23884.67,
+      "withdrawStatus": "1"
+    }
+  }
+]

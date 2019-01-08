@@ -1,0 +1,34 @@
+[
+  {
+    "path":"/product/buy/agreement",
+    "method": "get",
+    "params": ["bankId", "productId", "protocolType"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "bankId": "123",
+      "productId": "123",
+      "protocolContent": "<p>这是一个协议</p>"
+    }
+  },
+  {
+    "path": "/biz/product/buy",
+    "method": "post",
+    "params": ["userId", "bankId", "productId", "payPwd", "orderSubject", "orderDesc", "totalAmount", "discountAmount", "payAmount", "bankAcctId", "recommenderPhone"],
+    "paramsCanBeNull": ["recommenderPhone"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "orderId": "123",
+      "channelOrderSeq": "123",
+      "orderStatus": "PROCESS",
+      "tradeTime": "1970-1-1 11:11:11"
+    }
+  }
+]

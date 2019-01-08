@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>首页未选中</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页未选中">
+            <polygon id="Rectangle-6" fill="#767676" fill-rule="nonzero" points="18 7.56414274 18 18 20 18 20 6.47664178 10 0 0 6.47664178 0 18 2 18 2 7.56414274 10 2.38282932"></polygon>
+            <rect id="Rectangle-7" fill="#CFCFCF" x="7" y="13" width="6" height="5"></rect>
+        </g>
+    </g>
+</svg>

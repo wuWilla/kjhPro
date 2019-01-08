@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            border: 0;
+            padding: 0;
+        }
+        .parent{
+            padding: 10px 10px;
+            height: 50px;
+            background: orangered;
+            overflow: hidden;
+        }
+        .parent >div{
+            float: left;
+        }
+        .input-wrapper{
+            width: 89%;
+        }
+        .input-wrapper input{
+            border: none;
+            border: 0;
+            width: 100%;
+            padding-top:10px;
+            height: 30px;
+        }
+        input::-webkit-input-placeholder{
+            font-size: 20px;
+        }
+        .input-icon-wrapper{
+            width: 11%;
+            height: 20px;
+            background: yellow;
+            padding-top:20px;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="input-wrapper">
+        <input type="text" placeholder="请输入关键字">
+    </div>
+    <div class="input-icon-wrapper">123</div>
+</div>
+</body>
+</html>

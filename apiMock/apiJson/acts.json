@@ -1,0 +1,84 @@
+[
+  {
+    "path":"/activity/list",
+    "method": "get",
+    "params": ["status", "startDate", "endDate"],
+    "paramsCanBeNull": ["status", "startDate", "endDate"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "limit": 5,
+      "start": 0,
+      "total": 2,
+      "actList": [
+        {
+          "actId": "11100",
+          "actName": "开业专享活动",
+          "subject": "开业专享活动",
+          "actSummary": "新开户立享红包新开户立享红包新开户立享红包新开户立享红包新开户立享红包",
+          "creator": "jiuhu",
+          "approver": "jiuhu",
+          "status": "ONGOING",
+          "approvalTime": "2018-8-24 14:05:45",
+          "startDate": "2018",
+          "endDate": "",
+          "createTime": "",
+          "updateTime": "",
+          "templateId": "newOpen",
+          "templateName": "开业专享",
+          "pictureURL": "/img/activity-banner-new.png",
+          "templateURL": ""
+        },
+        {
+          "actId": "11101",
+          "actName": "推荐好友开户共享红包",
+          "subject": "推荐好友开户共享红包",
+          "actSummary": "推荐好友开户共享红包",
+          "creator": "jiuhu",
+          "approver": "jiuhu",
+          "status": "ONGOING",
+          "approvalTime": "2018-8-24 14:05:45",
+          "startDate": "2018-09-18",
+          "endDate": "2018-09-22",
+          "createTime": "2018-08-32 15:45:55",
+          "updateTime": "2018-08-32 15:45:55",
+          "templateId": "inviteOpen",
+          "templateName": "邀请用户开户",
+          "pictureURL": "/img/activity-banner-invest.png",
+          "templateURL": ""
+        }
+      ]
+    }
+  },
+  {
+    "path": "/activity/detail",
+    "method": "get",
+    "params": ["actId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "actId": "11101",
+      "actName": "推荐好友开户共享红包",
+      "subject": "推荐好友开户共享红包",
+      "actSummary": "齐鲁稳固21天”是中泰证券（上海）资产管理有限公司（原名齐鲁证券（上海）资产管理有限公司）面向个人发行的限定性集合资产管理计划产品--“齐鲁稳固21天集合资产管理计划”。中泰证券（上海）资产管理有限公司客户服务电话：95538,",
+      "creator": "jiuhu",
+      "approver": "jiuhu",
+      "status": "ONGOING",
+      "approvalTime": "2018-8-24 14:05:45",
+      "startDate": "2018-09-18",
+      "endDate": "2018-09-22",
+      "createTime": "2018-08-32 15:45:55",
+      "updateTime": "2018-08-32 15:45:55",
+      "templateId": "inviteOpen",
+      "templateName": "邀请用户开户",
+      "pictureURL": "/img/activity-bg-new.png",
+      "templateURL": "../../assets/img/activity-bg-invest.png"
+    }
+  }
+]

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex骰子的布局</title>
+</head>
+<style>
+    /*common style*/
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        display: -webkit-flex; /*Webkit 内核的浏览器，必须加上-webkit前缀。*/
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /*vertical-align: center;*/
+        align-content: center; /*定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用*/
+        /*background-image: linear-gradient(to top,#222, #333);*/
+    }
+
+    [class$="face"] {
+        margin: 16px;
+        padding: 4px;
+
+        width: 104px;
+        height: 104px;
+        background-color: #e7e7e7;
+        object-fit: contain;
+
+        box-shadow:
+                inset 0 5px white,
+                inset 0 -5px #bbb,
+                inset 5px 0 #d7d7d7,
+                inset -5px 0 #d7d7d7;
+        border-radius: 10%;
+    }
+    .pip{
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin: 4px;
+
+        background-color: #333;
+        box-shadow:
+                    inset 0 3px #111,
+                    inset 0 -3px #555;
+    }
+
+    /*pip布局*/
+    .first-face{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .two-face{
+        display: flex;
+        justify-content: space-between;
+    }
+    .two-face .pip:last-child{
+        align-self: flex-end;/*允许单个项目有与其他项目不一样的对齐方式*/
+    }
+
+    .three-face{
+         display: flex
+    }
+    .three-face .pip:nth-of-type(2){
+        align-self: center;
+    }
+    .three-face .pip:nth-of-type(3){
+        align-self: flex-end;
+    }
+
+    .four-face{
+        display: flex;
+        justify-content: space-between;
+    }
+    .four-face .column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+     .fifth-face{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
+     .fifth-face .column{
+        display: flex;
+        justify-content: space-between;
+    }
+     .fifth-face .column:nth-of-type(2){
+        justify-content: center;
+    }
+
+     .six-face{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
+    .six-face .column{
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+<body>
+<div class="first-face">
+    <span class="pip"></span>
+</div>
+<div class="two-face">
+    <span class="pip"></span>
+    <span class="pip"></span>
+</div>
+<div class="three-face">
+    <span class="pip"></span>
+    <span class="pip"></span>
+    <span class="pip"></span>
+</div>
+<div class="four-face">
+    <div class="column">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+    <div class="column">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+</div>
+<div class="fifth-face">
+    <div class="column">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+    <div class="column">
+        <span class="pip"></span>
+    </div>
+    <div class="column">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+</div>
+<div class="six-face">
+    <div class="column">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+    <div class="column">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+    <div class="column">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+</div>
+</body>
+</html>

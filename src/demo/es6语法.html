@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // {
+    //     var a = 'aa';
+    //     let b = 'bb';
+    // }
+    // console.log(a);
+    // console.log(b);
+
+    // let str = "剑書恩仇录";
+    // for (let a of str){
+    //     console.log(a);
+    // }
+    // console.log(str.startsWith('書',0));
+    // console.log(str.endsWith('書',2));
+    // console.log(str.includes('仇'));
+
+    // function timeOut(ms) {
+    //     return new Promise((resolve,reject) => {
+    //         setTimeout(resolve,ms,'done')
+    //     })
+    // }
+    // timeOut(1000).then((value) => {
+    //     console.log(value);
+    // })
+
+    // let arr = ['a','b','c'];
+    // let iter = arr[Symbol.iterator]();
+    // console.log(iter.next());
+    // console.log(iter.next());
+    // console.log(iter.next());
+    // console.log(iter.next());
+
+    let a =function*(){
+        yield 3;
+        yield 4;
+        yield 5;
+        return 6;
+    };
+    console.log([...a()]);              //[3,4,5]
+    console.log(a().next());
+</script>
+</body>
+</html>

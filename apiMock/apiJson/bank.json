@@ -1,0 +1,768 @@
+[
+  {
+    "path":"/directbank/info",
+    "method": "get",
+    "params": ["bankId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "bankId": "1",
+      "bankName": "中国银行",
+      "parentBankName": "中国人民银行",
+      "bankLogoURL": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537154000&di=5e479bc0c033c519e9b3f5f94e1ff16b&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.gywb.com.cn%2Fxinwen%2Fattachement%2Fjpg%2Fsite2%2F20151119%2F4299101259876511778.jpg"
+    }
+  },
+  {
+    "path":"/directbank/login/status",
+    "method": "get",
+    "params": ["queryRiskAnalysis", "bankId", "userId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "hasLogin": "1",
+      "hasRiskAssess": "0",
+      "toleranceLevel": "1",
+      "toleranceDesc": "保守型",
+      "riskScore": "56"
+    }
+  },
+  {
+    "path": "/directbank/user/asset",
+    "method": "get",
+    "params": ["userId", "bankId"],
+    "result": {
+      "requestSystem": "requestSystem",
+      "requestNo": "12345678",
+      "responseTime": "2018-08-24 12:12:01",
+      "code": "000",
+      "message":"请求成功",
+      "assetList": [
+        {
+          "assetType": "1",
+          "totalAsset": 999999,
+          "investAmount": 899999,
+          "lastDayIncome": 88,
+          "totalIncome": 988
+        },
+        {
+          "assetType": "0",
+          "totalAsset": 333,
+          "investAmount": 233,
+          "lastDayIncome": 7,
+          "totalIncome": 88
+        }
+      ]
+    }
+  },
+  {
+    "path":"/directbank/login",
+    "method": "post",
+    "params": ["phone", "bankId", "bankLoginPwd"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "userId": "222",
+      "bankId": "111",
+      "hasRiskAssess": "1"
+    }
+  },
+  {
+    "path":"/verifyCode/send/bicai",
+    "method": "post",
+    "params": ["phone", "bankId", "bizType"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "userId": "222",
+      "bankId": "111",
+      "messageToken": "12312121123122121213213312",
+      "sendStatus": "1"
+    }
+  },
+  {
+    "path": "/directbank/login/pwd/reset",
+    "method": "post",
+    "params": ["userId", "phone", "bankId", "verifyCode", "messageToken", "idCardNo", "RealName", "newPwd", "verifyNewPwd"],
+    "paramsCanBeNull": ["idCardNo", "RealName"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功"
+    }
+  },
+  {
+    "path": "/directbank/user/register/step",
+    "method": "get",
+    "params": ["userId", "bankId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "lastStep": "0",
+      "registSeq": "12313213132131312313"
+    }
+  },
+  {
+    "path": "/directbank/register/certification",
+    "method": "post",
+    "params": ["userId", "bankId", "phone", "messageToken", "verifyCode", "idCardNo", "realName", "idCardFront", "idCardBack", "job", "degree"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "certificationRegistSeq": "13213123132123123",
+      "phone": "12313213132131312313",
+      "bankId": "1212",
+      "userId": "1231311"
+    }
+  },
+  {
+    "path": "/directbank/register/binding/card",
+    "method": "post",
+    "params": ["userId", "bankId", "bankCardNo", "certificationRegistSeq"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "bandCardRegistSeq": "13213123132123123",
+      "bankId": "1212",
+      "userId": "1231311"
+    }
+  },
+  {
+    "path": "/directbank/register/pwd/set",
+    "method": "post",
+    "params": ["userId", "bankId", "bankLoginPwd", "bankPayPwd", "certificationRegistSeq"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "setPwdRegistSeq": "13213123132123123",
+      "ecAcctId": "123123123",
+      "bankId": "1212",
+      "userId": "1231311"
+    }
+  },
+  {
+    "path": "/directbank/support/binding/bank",
+    "method": "get",
+    "params": ["bankId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "supportBankList": [
+        {
+          "bankName": "中国银行",
+          "bankLogoUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537154000&di=5e479bc0c033c519e9b3f5f94e1ff16b&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.gywb.com.cn%2Fxinwen%2Fattachement%2Fjpg%2Fsite2%2F20151119%2F4299101259876511778.jpg",
+          "BankCode": "asdfasdfasdfasdfasdfa",
+          "singleLimit": 10000,
+          "dayLimit": 50000
+        },
+        {
+          "bankName": "中国人民银行",
+          "bankLogoUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537154000&di=5e479bc0c033c519e9b3f5f94e1ff16b&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.gywb.com.cn%2Fxinwen%2Fattachement%2Fjpg%2Fsite2%2F20151119%2F4299101259876511778.jpg",
+          "BankCode": "asdfasdfasdfasdfasdfa",
+          "singleLimit": 10000,
+          "dayLimit": 50000
+        },
+        {
+          "bankName": "中国农业银行",
+          "bankLogoUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537154000&di=5e479bc0c033c519e9b3f5f94e1ff16b&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.gywb.com.cn%2Fxinwen%2Fattachement%2Fjpg%2Fsite2%2F20151119%2F4299101259876511778.jpg",
+          "BankCode": "asdfasdfasdfasdfasdfa",
+          "singleLimit": 10000,
+          "dayLimit": 50000
+        },
+        {
+          "bankName": "中国工商银行",
+          "bankLogoUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537154000&di=5e479bc0c033c519e9b3f5f94e1ff16b&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.gywb.com.cn%2Fxinwen%2Fattachement%2Fjpg%2Fsite2%2F20151119%2F4299101259876511778.jpg",
+          "BankCode": "asdfasdfasdfasdfasdfa",
+          "singleLimit": 10000,
+          "dayLimit": 50000
+        }
+      ]
+    }
+  },
+  {
+    "path": "/risk/assessment/question",
+    "method": "get",
+    "params": ["bankId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "questList": [
+        {
+          "questionNo": "1",
+          "questionDesc": "你的主要收入来源是？",
+          "options": [
+            {
+              "optionNo": "1",
+              "optionDesc": "无固定收入"
+            },
+            {
+              "optionNo": "2",
+              "optionDesc": "出租、出售房地产等非金融性资产收入"
+            },
+            {
+              "optionNo": "3",
+              "optionDesc": "利息、股息、转让证券等金融性资产收入"
+            },
+            {
+              "optionNo": "4",
+              "optionDesc": "生产经营所得"
+            },
+            {
+              "optionNo": "5",
+              "optionDesc": "工资、劳务报酬"
+            }
+          ]
+        },
+        {
+          "questionNo": "2",
+          "questionDesc": "你的主要收入来源是？",
+          "options": [
+            {
+              "optionNo": "1",
+              "optionDesc": "无固定收入"
+            },
+            {
+              "optionNo": "2",
+              "optionDesc": "出租、出售房地产等非金融性资产收入"
+            },
+            {
+              "optionNo": "3",
+              "optionDesc": "利息、股息、转让证券等金融性资产收入"
+            },
+            {
+              "optionNo": "4",
+              "optionDesc": "生产经营所得"
+            },
+            {
+              "optionNo": "5",
+              "optionDesc": "工资、劳务报酬"
+            }
+          ]
+        },
+        {
+          "questionNo": "3",
+          "questionDesc": "你的主要收入来源是？",
+          "options": [
+            {
+              "optionNo": "1",
+              "optionDesc": "无固定收入"
+            },
+            {
+              "optionNo": "2",
+              "optionDesc": "出租、出售房地产等非金融性资产收入"
+            },
+            {
+              "optionNo": "3",
+              "optionDesc": "利息、股息、转让证券等金融性资产收入"
+            },
+            {
+              "optionNo": "4",
+              "optionDesc": "生产经营所得"
+            },
+            {
+              "optionNo": "5",
+              "optionDesc": "工资、劳务报酬"
+            }
+          ]
+        },
+        {
+          "questionNo": "4",
+          "questionDesc": "你的主要收入来源是？",
+          "options": [
+            {
+              "optionNo": "1",
+              "optionDesc": "无固定收入"
+            },
+            {
+              "optionNo": "2",
+              "optionDesc": "出租、出售房地产等非金融性资产收入"
+            },
+            {
+              "optionNo": "3",
+              "optionDesc": "利息、股息、转让证券等金融性资产收入"
+            },
+            {
+              "optionNo": "4",
+              "optionDesc": "生产经营所得"
+            },
+            {
+              "optionNo": "5",
+              "optionDesc": "工资、劳务报酬"
+            }
+          ]
+        },
+        {
+          "questionNo": "5",
+          "questionDesc": "你的主要收入来源是？",
+          "options": [
+            {
+              "optionNo": "1",
+              "optionDesc": "无固定收入"
+            },
+            {
+              "optionNo": "2",
+              "optionDesc": "出租、出售房地产等非金融性资产收入"
+            },
+            {
+              "optionNo": "3",
+              "optionDesc": "利息、股息、转让证券等金融性资产收入"
+            },
+            {
+              "optionNo": "4",
+              "optionDesc": "生产经营所得"
+            },
+            {
+              "optionNo": "5",
+              "optionDesc": "工资、劳务报酬"
+            }
+          ]
+        },
+        {
+          "questionNo": "6",
+          "questionDesc": "你的主要收入来源是？",
+          "options": [
+            {
+              "optionNo": "1",
+              "optionDesc": "无固定收入"
+            },
+            {
+              "optionNo": "2",
+              "optionDesc": "出租、出售房地产等非金融性资产收入"
+            },
+            {
+              "optionNo": "3",
+              "optionDesc": "利息、股息、转让证券等金融性资产收入"
+            },
+            {
+              "optionNo": "4",
+              "optionDesc": "生产经营所得"
+            },
+            {
+              "optionNo": "5",
+              "optionDesc": "工资、劳务报酬"
+            }
+          ]
+        },
+        {
+          "questionNo": "7",
+          "questionDesc": "你的主要收入来源是？",
+          "options": [
+            {
+              "optionNo": "1",
+              "optionDesc": "无固定收入"
+            },
+            {
+              "optionNo": "2",
+              "optionDesc": "出租、出售房地产等非金融性资产收入"
+            },
+            {
+              "optionNo": "3",
+              "optionDesc": "利息、股息、转让证券等金融性资产收入"
+            },
+            {
+              "optionNo": "4",
+              "optionDesc": "生产经营所得"
+            },
+            {
+              "optionNo": "5",
+              "optionDesc": "工资、劳务报酬"
+            }
+          ]
+        },
+        {
+          "questionNo": "8",
+          "questionDesc": "你的主要收入来源是？",
+          "options": [
+            {
+              "optionNo": "1",
+              "optionDesc": "无固定收入"
+            },
+            {
+              "optionNo": "2",
+              "optionDesc": "出租、出售房地产等非金融性资产收入"
+            },
+            {
+              "optionNo": "3",
+              "optionDesc": "利息、股息、转让证券等金融性资产收入"
+            },
+            {
+              "optionNo": "4",
+              "optionDesc": "生产经营所得"
+            },
+            {
+              "optionNo": "5",
+              "optionDesc": "工资、劳务报酬"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "path": "/risk/assessment/answer/commit",
+    "method": "post",
+    "params": ["bankId", "userId", "answerList"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "toleranceLevel": "1",
+      "toleraanceDesc": "保守型",
+      "assessResultDesc": "风险承受度适中，偏向于资产均衡配置，能够承受一定的投资风险。同时，对资产收益要求高于保守型、谨慎型投资者。",
+      "score": "28"
+    }
+  },
+  {
+    "path": "/directbank/user/info",
+    "method": "get",
+    "params": ["bankId", "userId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "userId": "123132132",
+      "bankId": "123132145",
+      "realName": "张三",
+      "loginPhone": "13112345678",
+      "riskAssessment": "1",
+      "riskAssessmentLevel": "1",
+      "riskLevelDesc": "sadfasdfsadfsadfsadf",
+      "riskAssessmentScore": 28,
+      "bankCode": "123456789456132",
+      "bankName": "中国银行",
+      "bankLogoUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537154000&di=5e479bc0c033c519e9b3f5f94e1ff16b&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.gywb.com.cn%2Fxinwen%2Fattachement%2Fjpg%2Fsite2%2F20151119%2F4299101259876511778.jpg",
+      "bankCardNo": "1234",
+      "singleLimit": 100,
+      "dayLimit": 500
+    }
+  },
+  {
+    "path": "/directbank/rechargeOrWithdarw/history/list",
+    "method": "get",
+    "params": ["bankId", "userId", "queryType", "startDate", "endDate"],
+    "paramsCanBeNull": ["startDate", "endDate"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "start":0,
+      "limit":10,
+      "total":18,
+      "recordList": [
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "1",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "2",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "0",
+          "resultCode": "2",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        },
+        {
+          "bankId": "123132145",
+          "userId": "1231231212",
+          "recordId": "12312312212",
+          "productId": "12312312312",
+          "tradeAmount": 200.22,
+          "accountBalance": 20000.23,
+          "tradeType": "1",
+          "resultCode": "0",
+          "resultDesc": "信息",
+          "tradeTime": "1970-01-01 12:12:12"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/user/recharge/agreement/sign/status",
+    "method": "get",
+    "params": ["bankId", "userId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "signStatus":"0"
+    }
+  },
+  {
+    "path": "/biz/recharge/protocol/code",
+    "method": "get",
+    "params": ["bankId", "userId"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "rechargePin":"123123132132"
+    }
+  },
+  {
+    "path": "/biz/recharge",
+    "method": "post",
+    "params": ["bankId", "userId", "tradeAmount", "verifyCode", "rechargePin", "payPwd"],
+    "paramsCanBeNull": ["verifyCode", "rechargePin"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "rechargePin":"123123132132",
+      "orderId": "12312312312",
+      "createTime": "1970-01-01 12:12:21",
+      "tradeStatus": "PROCESS"
+    }
+  },
+  {
+    "path": "/biz/withdraw",
+    "method": "post",
+    "params": ["bankId", "userId", "withdrawAll", "withdrawAmount", "payPwd"],
+    "paramsCanBeNull": ["withdrawAll"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功",
+      "rechargePin":"123123132132",
+      "orderId": "12312312312",
+      "tradeDate": "1970-01-01 12:12:21",
+      "withdrawStatus": "PROCESS"
+    }
+  },
+  {
+    "path": "/user/binding/bank/card/change",
+    "method": "post",
+    "params": ["bankId", "userId", "phone", "newBankCardNo", "idCardNo", "realName", "payPwd"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功"
+    }
+  },
+  {
+    "path": "/directbank/login/phone/change",
+    "method": "post",
+    "params": ["bankId", "userId", "newPhone", "verifyCode", "messageToken"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功"
+    }
+  },
+  {
+    "path": "/directbank/pay/pwd/reset",
+    "method": "post",
+    "params": ["bankId", "userId", "phone", "verifyCode", "messageToken", "idCardNo", "newPwd", "verifyNewPwd"],
+    "result": {
+      "requestSystem":"requestSystem",
+      "requestNo":"12345678",
+      "responseTime":"2018-08-24 12:12:01",
+      "code":"000",
+      "message":"请求成功"
+    }
+  }
+]
